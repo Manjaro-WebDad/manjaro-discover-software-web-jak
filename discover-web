@@ -1,0 +1,16 @@
+#!/usr/bin/env python
+from JAK.Application import JWebApp
+
+
+def discover():
+    # v1.0.0
+    url = "discover.manjaro.org"
+
+    allow = url, url
+
+    webapp = JWebApp(title="Manjaro Discover Software Web", web_contents=url, online=True)
+
+    return webapp
+
+
+discover().run()
